@@ -51,22 +51,18 @@ dc.forEach((item) => {
   cardsDc.appendChild(card);
 });
 
-const clickBtn = document.querySelector(".card");
-clickBtn.addEventListener("click", hola);
-function hola(e) {
-  if (e.target.classList.contains("card")) {
-    console.log(e.target.classList);
+const clickBtn = document.querySelector(".cards");
+clickBtn.addEventListener("click", verDetalle);
+
+function verDetalle(e) {
+  if (e.target.classList.contains("btn")) {
+    console.log(e.target.id);
+    const personaje = e.target.id;
+    getCharacter(personaje);
   }
 }
-// const card = document.createElement("DIV");
-// const foto = document.createElement("IMG");
-// const titulo = document.createElement("P");
 
-// card.classList.add("card");
-// foto.classList.add("poster");
-// foto.src = "storage/img/batman.webp";
-// titulo.textContent = "Tal";
-// card.appendChild(foto);
-// card.appendChild(titulo);
-
-// cardsDc.appendChild(card);
+function getCharacter(character) {
+  const tal = dc.find((item) => item.nombre === character);
+  console.log(tal);
+}

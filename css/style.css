@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+/* dialog {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    z-index: 5;
+} */
+
 body{
     font-size: 1rem;
     background-color: white;
@@ -41,6 +55,7 @@ body{
     object-fit: contain;
     width: 100%;
     text-align: center;
+    min-height: 330px;
 }
 
 .nombre{
@@ -54,4 +69,10 @@ body{
     color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.texto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
