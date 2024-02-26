@@ -17,7 +17,7 @@ const dc = [
     nombre: "Dr. Manhattan",
     descripción:
       "Dr. Manhattan es un personaje de Watchmen, un ser humano que adquiere poderes cuánticos tras un accidente en un reactor nuclear. Posee habilidades sobrehumanas y una percepción del tiempo no lineal.",
-    fecha_lanzamiento: "1986-09-01",
+    fecha_lanzamiento: "2000-09-01",
     foto: "https://cdnb.artstation.com/p/assets/images/images/038/005/589/large/senal-weerasooriya-dr-man.jpg?1621924886",
   },
   {
@@ -30,6 +30,10 @@ const dc = [
 ];
 
 const cardsDc = document.querySelector(".dcc");
+const dialogo = document.querySelector(".dialogo");
+const cerrarDialog = document.querySelector(".cerrar");
+
+cerrarDialog.addEventListener("click", closeDialo);
 
 dc.forEach((item) => {
   const card = document.createElement("DIV");
@@ -47,7 +51,6 @@ dc.forEach((item) => {
   card.appendChild(foto);
   card.appendChild(titulo);
   card.appendChild(boton);
-
   cardsDc.appendChild(card);
 });
 
@@ -63,6 +66,26 @@ function verDetalle(e) {
 }
 
 function getCharacter(character) {
-  const tal = dc.find((item) => item.nombre === character);
-  console.log(tal);
+  const personaje = dc.find((item) => item.nombre === character);
+  console.log(personaje);
+  showDescription(personaje);
+}
+
+function showDescription(personaje) {
+  const foto = document.querySelector(".imgModal");
+  const nombre = document.querySelector(".tituloModal");
+  const descripcion = document.querySelector(".decripcion");
+  const fecha = document.querySelector(".fecha");
+
+  dialogo.show();
+
+  foto.src = personaje.foto;
+  nombre.textContent = personaje.nombre;
+  descripcion.textContent = personaje.descripción;
+  fecha.textContent = personaje.fecha_lanzamiento;
+  console.log(personaje.fecha_lanzamiento);
+}
+
+function closeDialo() {
+  dialogo.close();
 }
