@@ -10,7 +10,6 @@
 }
 
 dialog {
-    /* display: block; */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -106,4 +105,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* .tituloModal{
+    font: 1em sans-serif;
+} */
+
+.decripcion, .fecha{
+    font-size: 0.9rem;
+    text-align: justify;
 }
