@@ -98,70 +98,70 @@ const marvel = [
     descripción:
       "Spider-Man, también conocido como Peter Parker, es uno de los superhéroes más icónicos de Marvel Comics. Después de ser picado por una araña radiactiva, adquiere habilidades sobrehumanas, incluida la agilidad, la fuerza y la capacidad de trepar paredes. Lucha contra el crimen mientras equilibra su vida como estudiante y fotógrafo freelance.",
     fecha_lanzamiento: "1962-08-01",
-    foto: "https://ejemplo.com/spiderman.jpg",
+    foto: "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/9MsCANWyLJmz2MAEqiy9vKMpyc8.jpg",
   },
   {
     nombre: "Iron Man",
     descripción:
       "Iron Man, también conocido como Tony Stark, es un multimillonario genio inventor que utiliza una armadura de alta tecnología para luchar contra el crimen y proteger al mundo. Stark es el fundador de Stark Industries y un miembro destacado de los Vengadores.",
     fecha_lanzamiento: "1963-03-01",
-    foto: "https://ejemplo.com/ironman.jpg",
+    foto: "https://media.themoviedb.org/t/p/w220_and_h330_face/fIvF6VGIFkNsCTgKYXwTX2q1rzF.jpg",
   },
   {
     nombre: "Captain America",
     descripción:
       "Captain America, también conocido como Steve Rogers, es un super soldado y el líder de los Vengadores. Después de recibir un suero experimental durante la Segunda Guerra Mundial, adquiere fuerza, velocidad y agilidad sobrehumanas. Lucha por la justicia y los ideales estadounidenses.",
     fecha_lanzamiento: "1941-03-01",
-    foto: "https://ejemplo.com/captainamerica.jpg",
+    foto: "https://media.themoviedb.org/t/p/w220_and_h330_face/82ucHZ4ioVGiweT1XMl1mUZaodq.jpg",
   },
   {
     nombre: "Thor",
     descripción:
       "Thor es el dios del trueno y un miembro clave de los Vengadores. Viene de Asgard y posee fuerza y resistencia sobrehumanas, así como la capacidad de controlar el clima. Lucha para proteger a los Nueve Reinos y defender la Tierra de amenazas cósmicas.",
     fecha_lanzamiento: "1962-08-01",
-    foto: "https://ejemplo.com/thor.jpg",
+    foto: "https://media.themoviedb.org/t/p/w220_and_h330_face/gPAmH41VpK5UPaNhAiNJePzrL8z.jpg",
   },
   {
     nombre: "Hulk",
     descripción:
       "Hulk, también conocido como Bruce Banner, es un científico que se transforma en una criatura verde gigante con fuerza increíble cuando se enoja. Aunque a menudo es incomprendido y perseguido, Hulk lucha contra las fuerzas del mal y protege a los inocentes.",
     fecha_lanzamiento: "1962-05-01",
-    foto: "https://ejemplo.com/hulk.jpg",
+    foto: "https://media.themoviedb.org/t/p/w220_and_h330_face/p4NYZXVtgKf6aiH65QzzkUVJcsd.jpg",
   },
   {
     nombre: "Black Widow",
     descripción:
       "Black Widow, también conocida como Natasha Romanoff, es una espía y una experta en combate mano a mano. Es una agente de S.H.I.E.L.D. y miembro de los Vengadores. A menudo se la ve como una figura enigmática y astuta que lucha por la justicia.",
     fecha_lanzamiento: "1964-04-01",
-    foto: "https://ejemplo.com/blackwidow.jpg",
+    foto: "https://media.themoviedb.org/t/p/w220_and_h330_face/oggEsESyLjVGD7jbIdBfa2hFUrx.jpg",
   },
   {
     nombre: "Doctor Strange",
     descripción:
       "Doctor Strange, también conocido como Stephen Strange, es un hechicero supremo y un maestro de las artes místicas. Anteriormente un cirujano arrogante, Strange aprende las artes místicas después de un accidente que daña sus manos. Protege el multiverso de amenazas místicas.",
     fecha_lanzamiento: "1963-07-01",
-    foto: "https://ejemplo.com/doctorstrange.jpg",
+    foto: "https://media.themoviedb.org/t/p/w220_and_h330_face/zHJYRHI5HkQuwLW5KyeXGQ596u7.jpg",
   },
   {
     nombre: "Black Panther",
     descripción:
       "Black Panther, también conocido como T'Challa, es el rey de Wakanda y un valiente guerrero. Lidera su nación con sabiduría y coraje, mientras protege el Vibranium, el metal más preciado de la Tierra. Como Black Panther, lucha por la justicia y la igualdad.",
     fecha_lanzamiento: "1966-07-01",
-    foto: "https://ejemplo.com/blackpanther.jpg",
+    foto: "https://media.themoviedb.org/t/p/w220_and_h330_face/aXmsbVlvLCuBDMxUvpDJdYSAOFQ.jpg",
   },
   {
     nombre: "Captain Marvel",
     descripción:
       "Captain Marvel, también conocida como Carol Danvers, es una ex piloto de la Fuerza Aérea de los Estados Unidos que obtiene poderes sobrehumanos después de un encuentro con una tecnología alienígena. Es una heroína cósmica que lucha para proteger la Tierra y otros planetas.",
     fecha_lanzamiento: "1968-03-01",
-    foto: "https://ejemplo.com/captainmarvel.jpg",
+    foto: "https://media.themoviedb.org/t/p/w220_and_h330_face/5SPa7dZ85p54xa7E9tHRmfKq5ce.jpg",
   },
   {
     nombre: "Ant-Man",
     descripción:
       "Ant-Man, también conocido como Scott Lang, es un ladrón y un ingeniero que roba un traje que le otorga la capacidad de encogerse a un tamaño diminuto mientras aumenta su fuerza. Junto con su compañero, la Avispa, lucha contra el crimen y protege el universo.",
     fecha_lanzamiento: "1962-09-01",
-    foto: "https://ejemplo.com/antman.jpg",
+    foto: "https://media.themoviedb.org/t/p/w220_and_h330_face/lKHy0ntGPdQeFwvNq8gK1D0anEr.jpg",
   },
 ];
 
