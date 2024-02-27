@@ -175,7 +175,13 @@ crearCard(dc, cardsDc, "dc");
 crearCard(marvel, cardsMarvel, "marvel");
 
 function crearCard(objeto, padre, franquisia) {
+  const universo = document.querySelector(".universo");
+  const tituloFranquisia = document.createElement("h2");
+  tituloFranquisia.textContent = franquisia;
+  universo.appendChild(tituloFranquisia);
+
   objeto.forEach((item) => {
+    console.log("Estra");
     const card = document.createElement("DIV");
     const foto = document.createElement("IMG");
     const titulo = document.createElement("P");
@@ -234,4 +240,45 @@ function showDescription(personaje) {
 
 function closeDialo() {
   dialogo.close();
+}
+
+const seccionMarvel = document.querySelector(".selectDc");
+seccionMarvel.addEventListener("click", ocultarDc);
+
+function ocultarDc() {
+  cardsMarvel.style.display = "none";
+  cardsDc.style.display = "grid";
+}
+
+const seccionDc = document.querySelector(".selectMarvel");
+seccionDc.addEventListener("click", ocultarMarvel);
+
+function ocultarMarvel() {
+  cardsMarvel.style.display = "grid";
+  cardsDc.style.display = "none";
+}
+
+const input = document.querySelector("#buscador");
+
+input.addEventListener("input", obtenerImput);
+
+function obtenerImput(evento) {
+  while (cardsDc.firstChild) {
+    cardsDc.removeChild(cardsDc.firstChild);
+  }
+  while (cardsMarvel.firstChild) {
+    cardsMarvel.removeChild(cardsMarvel.firstChild);
+  }
+
+  // const cardsDc = document.querySelector(".dcc");
+  // const cardsMarvel = document.querySelector(".cardsMarvel");
+  console.log(evento.target.value);
+  const valor = evento.target.value.toLowerCase();
+  const todo = [...dc, ...marvel];
+  const resultado = todo.filter((hero) =>
+    hero.nombre.toLowerCase().startsWith(valor)
+  );
+  // console.log(resultado);
+  crearCard(resultado, cardsDc, "dc");
+  // crearCard(resultado, cardsDc, "all");
 }
