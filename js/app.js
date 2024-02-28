@@ -193,14 +193,15 @@ const todo = [...dc, ...marvel];
 const cards = document.querySelector(".cards");
 const dialogo = document.querySelector(".dialogo");
 const cerrarDialog = document.querySelector(".cerrar");
-const seccionDc = document.querySelector(".selectMarvel");
-const seccionMarvel = document.querySelector(".selectDc");
+const seccionMarvel = document.querySelector(".selectMarvel");
+const seccionDc = document.querySelector(".selectDc");
 cerrarDialog.addEventListener("click", closeDialo);
 
 seccionDc.addEventListener("click", () => {
   limpiarHTML();
   crearCard(dc);
 });
+
 seccionMarvel.addEventListener("click", () => {
   limpiarHTML();
   crearCard(marvel);
@@ -223,6 +224,13 @@ function crearCard(objeto) {
     boton.classList.add("btn", item.franquicia);
     boton.id = item.nombre;
     boton.textContent = "Ver detalles";
+    item.franquicia === "marvel"
+      ? card.classList.add("cardColorMarvel")
+      : card.classList.add("cardColorDc");
+
+    item.franquicia === "marvel"
+      ? boton.classList.add("buttonColorMarvel")
+      : boton.classList.add("buttonColorDC");
     card.appendChild(foto);
     card.appendChild(titulo);
     card.appendChild(boton);
@@ -270,9 +278,9 @@ function closeDialo() {
 }
 
 const input = document.querySelector("#buscador");
-input.addEventListener("input", obtenerImput);
+input.addEventListener("input", obtenerInput);
 
-function obtenerImput(evento) {
+function obtenerInput(evento) {
   limpiarHTML();
   console.log(evento.target.value);
   const valor = evento.target.value.toLowerCase();
