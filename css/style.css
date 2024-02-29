@@ -89,16 +89,27 @@ main{
     cursor: pointer;
     height: 50px;
     width: 80px;
+    transition: all ease 0.5s;
+    margin-left: 10px;
+}
+
+.selectMarvel:hover{
+    scale: 1.1;
 }
 
 .selectDc{
     cursor: pointer;
     height: 50px;
     width: 40px;
+    transition: all ease 0.5s;
+}
+
+.selectDc:hover{
+    scale: 1.1;
 }
 
 .buscador{
-    margin-right: 10px;
+    margin-right: 20px;
     padding: 10px;
     border-radius: 10px;
 }
